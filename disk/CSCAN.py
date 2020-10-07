@@ -1,4 +1,6 @@
 def cscan(init, queue):
+    while(init in queue):
+        print(queue.pop(queue.index(init)),end=" ")
     result=0
     direc = 1
     while queue:

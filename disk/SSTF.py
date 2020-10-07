@@ -3,6 +3,8 @@ def choose(present, queue):
     return queue[diff.index(min(diff))]
 
 def sstf(init, queue):
+    while(init in queue):
+        print(queue.pop(queue.index(init)),end=" ")
     result = 0
     nexttrack = choose(init, queue)
     direc = 1 if init < nexttrack else -1

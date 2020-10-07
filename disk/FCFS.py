@@ -1,4 +1,4 @@
-def fifo(init, queue):
+def fcfs(init, queue):
     result = 0
     while queue:
         req = queue.pop(0) 
@@ -11,4 +11,4 @@ def fifo(init, queue):
 if __name__ == "__main__":
     init = int(input("처음 헤드 위치: "))
     queue = list(map(int, input("대기 큐: ").split()))
-    fifo(init, queue)
+    fcfs(init, queue)

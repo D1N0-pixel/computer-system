@@ -1,11 +1,11 @@
-import FIFO
+import FCFS
 import SSTF
 import SCAN
 import CSCAN
 
 def menu():
     print("디스크 스케줄링 방식을 선택하세요")
-    print("0. FIFO")
+    print("0. FCFS")
     print("1. SSTF")
     print("2. SCAN")
     print("3. C-SCAN")
@@ -15,7 +15,7 @@ def get_item():
     queue = list(map(int, input("대기 큐: ").split()))
     return init, queue
 
-func = [FIFO.fifo, SSTF.sstf, SCAN.scan, CSCAN.cscan]
+func = [FCFS.fcfs, SSTF.sstf, SCAN.scan, CSCAN.cscan]
 
 if __name__ == "__main__":
     menu()

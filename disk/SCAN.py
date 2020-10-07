@@ -1,4 +1,6 @@
 def scan(init, queue, direc):
+    while(init in queue):
+        print(queue.pop(queue.index(init)),end=" ")
     result=0
     save = init
     while queue:
